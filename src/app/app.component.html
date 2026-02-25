@@ -1,0 +1,276 @@
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark navbar-cyber sticky-top">
+  <div class="container">
+    <a class="navbar-brand glitch text-cyan" style="font-size: 1.5rem; font-weight: 700;" href="#" data-text="IGOR_DEV">
+      IGOR_DEV
+    </a>
+    <button class="navbar-toggler" type="button" data-mdb-collapse-init data-mdb-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars text-cyan"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#sobre">_Sobre</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#habilidades">_Habilidades</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#projetos">_Projetos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">_Contato</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<header class="section-padding text-center d-flex align-items-center" style="min-height: 90vh;">
+  <div class="container">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-md-6 order-md-2 mb-5 mb-md-0 position-relative">
+        <div class="position-relative d-inline-block"
+          style="border: 2px solid var(--neon-pink); padding: 10px; box-shadow: 0 0 20px var(--neon-pink);">
+          <!-- Placeholder para a foto. Quando o usuário renomear a foto do prompt para profile.png, vai aparecer perfeitamente aqui -->
+          <img src="assets/profile.png" alt="Igor Oliveira Mateus" class="img-fluid"
+            style="max-width: 300px; filter: contrast(1.2) drop-shadow(0 0 10px var(--neon-pink));">
+          <div
+            style="position: absolute; bottom: -10px; right: -10px; width: 0; height: 0; border-bottom: 30px solid var(--neon-cyan); border-left: 30px solid transparent;">
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 order-md-1 text-md-start text-center">
+        <h5 class="text-pink mb-3"><i class="fas fa-terminal"></i> BEM-VINDO AO MEU TERMINAL</h5>
+        <h1 class="display-3 fw-bold mb-2 glitch" data-text="IGOR OLIVEIRA MATEUS">
+          IGOR OLIVEIRA MATEUS
+        </h1>
+        <h3 class="text-cyan mb-4 glow-cyan">
+          <_Desenvolvedor Full Stack>
+        </h3>
+        <p class="lead mb-5" style="color: #bbb;">
+          Atuando no desenvolvimento de aplicações backend e fullstack, com foco em Java, Spring Boot e APIs REST.
+          Criando o futuro, uma linha de código por vez.
+        </p>
+        <div>
+          <a href="#projetos" class="btn-cyber me-3">VER PROJETOS <i class="fas fa-arrow-right ms-2"></i></a>
+          <a href="#contato" class="btn-cyber" style="border-color: var(--neon-pink); color: var(--neon-pink);">CONTATAR
+            <i class="fas fa-envelope ms-2"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Sobre Mim & Formação -->
+<section id="sobre" class="section-padding" style="background: rgba(5, 5, 15, 0.8);">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <h2 class="text-yellow mb-4"><i class="fas fa-user-astronaut me-2"></i>_OBJETIVO</h2>
+        <div class="cyber-card p-4 h-100">
+          <p class="fs-5">
+            Atuar no desenvolvimento e manutenção de aplicações backend ou fullstack.
+            Movido pela evolução constante em ambientes ágeis, com forte embasamento em
+            <span class="text-cyan">Java</span> e ecossistema <span class="text-neon-pink">Spring</span>.
+          </p>
+          <hr class="bg-secondary opacity-50 my-4">
+          <h4 class="text-cyan mb-3"># FORMAÇÃO_ACADÊMICA</h4>
+          <ul class="list-unstyled">
+            <li class="mb-3">
+              <i class="fas fa-graduation-cap text-yellow me-2"></i>
+              <strong>Análise e Desenvolvimento de Sistemas</strong><br>
+              <span class="text-muted ms-4">IFTM (Uberaba – Campus Tecnológico) - Cursando</span>
+            </li>
+            <li>
+              <i class="fas fa-language text-yellow me-2"></i>
+              <strong>Idiomas</strong><br>
+              <span class="text-muted ms-4">Inglês: Leitura, Escrita e Fala – Médio/Avançado</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <h2 class="text-pink mb-4"><i class="fas fa-code me-2"></i>_CONHECIMENTOS</h2>
+        <div class="cyber-card p-4 h-100">
+          <div class="accordion accordion-flush" id="skillsAccordion" style="background: transparent;">
+            <!-- C e Fundamentos -->
+            <div class="accordion-item"
+              style="background: transparent; border: 1px solid var(--neon-cyan); margin-bottom: 10px;">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button text-cyan" [class.collapsed]="activeAccordion !== 'c'" type="button"
+                  (click)="toggleAccordion('c')" style="background: rgba(0, 243, 255, 0.05); box-shadow: none;">
+                  <strong style="letter-spacing: 1px;">[&nbsp;FUNDAMENTOS & LINGUAGEM C&nbsp;]</strong>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse" [class.show]="activeAccordion === 'c'">
+                <div class="accordion-body text-muted" style="font-size: 0.95rem;">
+                  <div class="d-flex flex-wrap gap-2 mb-3">
+                    <button class="btn btn-sm btn-cyber" type="button" (click)="activeTab = 'langC'"
+                      style="font-size: 0.75rem; padding: 6px 12px;">
+                      LINGUAGEM C
+                    </button>
+                    <button class="btn btn-sm btn-cyber" type="button" (click)="activeTab = 'ed'"
+                      style="font-size: 0.75rem; padding: 6px 12px;">
+                      ESTRUTURA DE DADOS
+                    </button>
+                    <button class="btn btn-sm btn-cyber" type="button" (click)="activeTab = 'po'"
+                      style="font-size: 0.75rem; padding: 6px 12px;">
+                      PESQUISA / ORDENAÇÃO
+                    </button>
+                  </div>
+
+                  <div class="accordion" id="innerAccordionC">
+                    <div class="collapse mt-2" [class.show]="activeTab === 'langC'">
+                      <div class="card card-body text-cyber-desc mb-2"
+                        style="background: rgba(0, 243, 255, 0.05); border: 1px dashed var(--neon-cyan); border-radius: 0;">
+                        <strong class="text-cyan mb-1"><i class="fas fa-microchip me-2"></i>Linguagem C:</strong>
+                        Algoritmos, lógica de programação, estruturas de controle, estruturas de dados básicas,
+                        modularização e funções.
+                      </div>
+                    </div>
+                    <div class="collapse mt-2" [class.show]="activeTab === 'ed'">
+                      <div class="card card-body text-cyber-desc mb-2"
+                        style="background: rgba(0, 243, 255, 0.05); border: 1px dashed var(--neon-cyan); border-radius: 0;">
+                        <strong class="text-cyan mb-1"><i class="fas fa-network-wired me-2"></i>Estrutura de
+                          Dados:</strong> Vetores, listas encadeadas (simples, duplas e circulares), pilhas, filas,
+                        árvores (binárias, AVL, múltiplas) e grafos.
+                      </div>
+                    </div>
+                    <div class="collapse mt-2" [class.show]="activeTab === 'po'">
+                      <div class="card card-body text-cyber-desc mb-2"
+                        style="background: rgba(0, 243, 255, 0.05); border: 1px dashed var(--neon-cyan); border-radius: 0;">
+                        <strong class="text-cyan mb-1"><i class="fas fa-sort-amount-down me-2"></i>Pesquisa e
+                          Ordenação:</strong> Algoritmos de busca, ordenação e análise de complexidade.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Backend -->
+            <div class="accordion-item"
+              style="background: transparent; border: 1px solid var(--neon-pink); margin-bottom: 10px;">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button text-pink" [class.collapsed]="activeAccordion !== 'java'" type="button"
+                  (click)="toggleAccordion('java')" style="background: rgba(255, 0, 255, 0.05); box-shadow: none;">
+                  <strong style="letter-spacing: 1px;">[&nbsp;JAVA & BACKEND&nbsp;]</strong>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" [class.show]="activeAccordion === 'java'">
+                <div class="accordion-body text-cyber-desc" style="font-size: 0.95rem;">
+                  <strong class="text-pink">Java:</strong> Sintaxe, controle de fluxo, POO (herança, polimorfismo,
+                  abstração), coleções, enums e APIs padrão.<br><br>
+                  <strong class="text-pink">Spring Framework:</strong> Spring Boot, Spring MVC, desenvolvimento de APIs
+                  REST, Spring Data JPA, persistência, transações e boas práticas.<br><br>
+                  <strong class="text-pink">Testes:</strong> JUnit 5 e Mockito para testes unitários e mocks de
+                  dependências.
+                </div>
+              </div>
+            </div>
+
+            <!-- Frontend & DB -->
+            <div class="accordion-item" style="background: transparent; border: 1px solid var(--neon-yellow);">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button text-yellow" [class.collapsed]="activeAccordion !== 'front'"
+                  type="button" (click)="toggleAccordion('front')"
+                  style="background: rgba(252, 238, 10, 0.05); box-shadow: none;">
+                  <strong style="letter-spacing: 1px;">[&nbsp;FRONTEND & DATABASE&nbsp;]</strong>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" [class.show]="activeAccordion === 'front'">
+                <div class="accordion-body text-cyber-desc" style="font-size: 0.95rem;">
+                  <strong class="text-yellow">Frontend:</strong> Angular (componentização, services, HTTP, routing e
+                  integração com APIs REST).<br><br>
+                  <strong class="text-yellow">Database:</strong> SQL (PostgreSQL / MySQL), modelagem de dados,
+                  consultas, joins e relacionamentos.<br><br>
+                  <strong class="text-yellow">Ferramentas & Integração:</strong> Git/GitHub, Maven, Postman,
+                  Node.js/npm. Integração CORS, serialização JSON e padrões de arquitetura.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Projetos -->
+<section id="projetos" class="section-padding">
+  <div class="container">
+    <h2 class="text-cyan text-center mb-5 glitch" data-text="_PROJETOS_DESTAQUE">_PROJETOS_DESTAQUE</h2>
+    <div class="row justify-content-center">
+      <!-- Projeto: Registro de Carros Full Stack -->
+      <div class="col-lg-8">
+        <div class="cyber-card p-0">
+          <div class="row g-0">
+            <div class="col-md-5 d-flex align-items-center justify-content-center"
+              style="background: rgba(0, 243, 255, 0.05); border-right: 1px solid var(--grid-color);">
+              <i class="fas fa-car-side fa-5x text-cyan p-5 glow-cyan"></i>
+            </div>
+            <div class="col-md-7 p-4">
+              <h3 class="text-pink">Sistema de Registro de Carros</h3>
+              <p class="text-muted">
+                Aplicação Full Stack desenvolvida inteiramente conectada, provendo o cadastro e controle de veículos em
+                um banco de dados relacional.
+              </p>
+              <h6 class="text-yellow mb-2 mt-3">Tech Stack Utilizada:</h6>
+              <div>
+                <span class="badge badge-cyber">Angular 17</span>
+                <span class="badge badge-cyber">Spring Boot</span>
+                <span class="badge badge-cyber">MySQL</span>
+                <span class="badge badge-cyber">MDB UI Kit</span>
+              </div>
+              <div class="mt-4 d-flex gap-3 flex-wrap">
+                <a href="https://github.com/IgorCoding123/meu-carro-fullstack" target="_blank" class="btn-cyber"
+                  style="font-size: 0.8rem;">
+                  <i class="fab fa-github me-2"></i>Ver no GitHub
+                </a>
+                <a href="https://meu-carro-fullstack.vercel.app/" target="_blank" class="btn-cyber"
+                  style="border-color: var(--neon-pink); color: var(--neon-pink); font-size: 0.8rem;">
+                  <i class="fas fa-external-link-alt me-2"></i>Ver Site
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato & Rodapé -->
+<footer id="contato" class="pt-5 pb-3 mt-5"
+  style="background: var(--darker-bg); border-top: 1px solid var(--neon-pink);">
+  <div class="container text-center">
+    <h3 class="text-cyan mb-4 glow-cyan"><i class="fas fa-satellite-dish me-2"></i>_ESTABELECER_CONEXÃO</h3>
+    <p class="mb-4 text-muted">Aberto a oportunidades fullstack e discussões sobre o mundo cyberpunk do código.</p>
+
+    <div class="d-flex justify-content-center gap-4 mb-5">
+      <a href="https://linkedin.com/in/igor-oliveira-978714230" target="_blank" class="text-cyan fs-2"
+        style="text-decoration: none; transition: 0.3s;" onmouseover="this.className='text-pink fs-2 glow-pink'"
+        onmouseout="this.className='text-cyan fs-2'">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://github.com/IgorCoding123" target="_blank" class="text-cyan fs-2"
+        style="text-decoration: none; transition: 0.3s;" onmouseover="this.className='text-pink fs-2 glow-pink'"
+        onmouseout="this.className='text-cyan fs-2'">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="mailto:igor.mateus@estudante.iftm.edu.br" class="text-cyan fs-2"
+        style="text-decoration: none; transition: 0.3s;" onmouseover="this.className='text-pink fs-2 glow-pink'"
+        onmouseout="this.className='text-cyan fs-2'">
+        <i class="fas fa-envelope"></i>
+      </a>
+    </div>
+
+    <p class="text-muted small">
+      © 2026 // IGOR_DEV_PORTFOLIO. Executando na porta Vercel.<br>
+      Telefone: (34) 99774-5734
+    </p>
+  </div>
+</footer>
