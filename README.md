@@ -9,7 +9,7 @@ Este é meu portfólio pessoal construído puramente com tecnologia Front-End mo
 
 Toda a estética foi inspirada em temáticas tecnológicas, futuristas e Cyberpunk, utilizando animações _glitch_, cores neon de alto contraste (Cyan, Pink, Yellow) e Glassmorphism.
 
-🌐 **Acesse aqui o site ao vivo:** [https://portfolio-weld-pi-40.vercel.app/](https://portfolio-weld-pi-40.vercel.app/)
+🌐 **Acesse aqui o site ao vivo:** [https://portfolio-igor-coding.netlify.app/](https://portfolio-igor-coding.netlify.app/)
 
 ---
 
