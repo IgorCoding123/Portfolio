@@ -100,7 +100,7 @@ pdf.chapter_body('Inglês: Leitura, Escrita e Fala - Médio/Avançado.')
 # Rodapé
 pdf.ln(5)
 pdf.set_font('Arial', 'I', 8)
-pdf.cell(0, 10, f'Atualizado via Portfolio Bot em: {datetime.datetime.now().strftime("%d/%m/%Y")}', 0, 0, 'R')
+pdf.cell(0, 10, f'Atualizado em: {datetime.datetime.now().strftime("%d/%m/%Y")}', 0, 0, 'R')
 
 output_path = 'Curriculo_Igor_Oliveira.pdf'
 pdf.output(output_path)
